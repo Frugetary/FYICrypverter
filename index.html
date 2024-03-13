@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cryptograph Converter</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+</head>
+<body>
+    <header class="header">
+        <div class="logo">
+            <img src="pict/FYI.png" alt="Logo">
+        </div>
+        <div class="title">
+            <h1>Cryptograph Converter</h1>
+        </div>
+    </header>
+    <div class="container">
+        <div class="form">
+            <label for="aksi">Aksi:</label>
+            <select id="aksi">
+                <option value="enkripsi">Enkripsi</option>
+                <option value="dekripsi">Dekripsi</option>
+            </select>
+        </div>
+        <div class="form">
+            <label for="metode">Metode:</label>
+            <select id="metode">
+                <option value="rot13rot47">Rotbat</option>
+                <option value="caesar3rot13">Torca Cipher 16</option>
+            </select>
+        </div>
+        <textarea id="inputText" rows="5" placeholder="Plaintext / Ciphertext"></textarea>
+        <button onclick="convert()">Convert</button>
+        <textarea id="outputText" rows="5" placeholder="Hasil" readonly></textarea>
+    </div>
+    <div class="footer">
+        <p>Created with <i class="fas fa-heart"></i> by FYI</p>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
